@@ -24,22 +24,22 @@ public class Publicaciones{
     private String nombrePublico;
     
     /**
-    *   Si es publico o para amigos.
+    *   Si es publico o privado.
     */
-    private String pubOamigos;
+    private String privOamigos;
 
     /**
      * 
-     * @param contenidoPublicación
-     * @param nombrePublico
-     * @param pubOamigos 
+     * @param contenidoPublicación Donde se guardara el contenido de la publicación.
+     * @param nombrePublico Mostrara el nombre del Usuario 
+     * @param privOamigos A quien se mostrara ya sea privado o publico
      * 
      */
     
-    public Publicaciones(String contenidoPublicación, String pubOamigos, Usuario usuario) {
+    public Publicaciones(String contenidoPublicación, String privOamigos, Usuario usuario) {
         this.contenidoPublicación = contenidoPublicación;
         nombrePublico = usuario.getNombre();
-        this.pubOamigos = pubOamigos;
+        this.privOamigos = privOamigos;
     }
 
     public String getContenidoPublicación() {
